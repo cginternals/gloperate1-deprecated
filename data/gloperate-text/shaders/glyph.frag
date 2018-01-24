@@ -144,12 +144,12 @@ void main()
 
 	// non-subpixel variations
 
-	float a;
+	float a = 1.0;
 
 //	a =    aastep3(0.5, g_uv);
 //	a =    aastep8(0.5, g_uv);
 //	a =  aastep3x3(0.5, g_uv);
-	a = aastep4x4s(0.5, g_uv);
+	a = aastep4x4s(0.4, g_uv);
 
 	out_color = vec4(fc.rgb, fc.a * a);
 }
